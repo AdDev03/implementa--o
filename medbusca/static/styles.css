@@ -1,0 +1,130 @@
+/* Adicionando estilos adicionais para o efeito de opacidade em dispositivos móveis */
+.feature:hover::after,
+.feature:active::after,
+.feature:focus::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.5);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.feature:hover h2,
+.feature:hover p,
+.feature:active h2,
+.feature:active p,
+.feature:focus h2,
+.feature:focus p {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Reset de estilos e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7ff; /* Tom de azul claro para o fundo */
+    color: #333; /* Cor do texto */
+}
+
+header {
+    background-color: #007bff; /* Azul escuro para o cabeçalho */
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+
+
+/* Adicionando estilos adicionais para o efeito de opacidade */
+.feature {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.feature:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.5); /* Cor de opacidade azul ao passar o mouse */
+    z-index: 1;
+}
+.feature:hover h2,
+.feature:hover p {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.feature h2,
+.feature p {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+
+
