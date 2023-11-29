@@ -11,10 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#ajuda">Ajuda</a></li>
-                <li><a href="resultados.html">Sobre</a></li>
-                <li><a href="busca.html">Urgência</a></li>
+                <li><a href="{{ url_for('inicio') }}">Início</a></li>
+                <li><a href="{{ url_for('busca') }}">Busca</a></li>
+                <li><a href="{{ url_for('resultados') }}">Resultados</a></li>
             </ul>
         </nav>
     </header>
